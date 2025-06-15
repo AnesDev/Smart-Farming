@@ -43,6 +43,8 @@ st.markdown(
             display: block;
             padding: 10x 0 5px 16px;
             margin:0px 15px 20px 15px ;
+        #MainMenu, footer {visibility: hidden;}
+        header {visibility: hidden;}
         }
     </style>
 """, unsafe_allow_html=True)
