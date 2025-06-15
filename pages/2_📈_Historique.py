@@ -25,6 +25,8 @@ cur = conn.cursor()
 # === UI Styling ===
 st.markdown("""
 <style>
+#MainMenu, footer {visibility: hidden;}
+header {visibility: hidden;}
 /* ===== App Theme Colors ===== */
 [data-testid="stHeader"],
 [data-testid="stAppViewContainer"] {
