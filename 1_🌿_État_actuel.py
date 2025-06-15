@@ -21,6 +21,10 @@ cur = conn.cursor()
 
 sidebar_bg_css = """
 <style>
+/* Hide Streamlit's top-right menu */
+[data-testid="stToolbar"] {
+    visibility: hidden !important;
+}
 [data-testid="stHeader"] {
     background-color: #ECFAE5;
 }
