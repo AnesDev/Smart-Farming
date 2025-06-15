@@ -25,6 +25,10 @@ cur = conn.cursor()
 # === UI Styling ===
 st.markdown("""
 <style>
+/* Hide Streamlit's top-right menu */
+[data-testid="stToolbar"] {
+    visibility: hidden !important;
+}
 #MainMenu, footer {visibility: hidden;}
 header {visibility: hidden;}
 /* ===== App Theme Colors ===== */
