@@ -113,6 +113,10 @@ input[type="text"]::-webkit-inner-spin-button,
 input[type="text"]::-webkit-clear-button {
     display: none !important;
 }
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
 

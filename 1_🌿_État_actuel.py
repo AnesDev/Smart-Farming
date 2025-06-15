@@ -32,21 +32,25 @@ sidebar_bg_css = """
 }
 </style>
 """
-st.markdown(
-    """
-    <style>
-        [data-testid="stSidebarNav"]::before {
-            content: "🌾 Smart Farming";
-            font-size: 28px;
-            font-weight: 600;
-            color: green;
-            display: block;
-            padding: 10x 0 5px 16px;
-            margin:0px 15px 20px 15px ;
-        #MainMenu, footer {visibility: hidden;}
-        header {visibility: hidden;}
-        }
-    </style>
+
+st.markdown("""
+<style>
+/* Custom Sidebar Title */
+[data-testid="stSidebarNav"]::before {
+    content: "🌾 Smart Farming";
+    font-size: 28px;
+    font-weight: 600;
+    color: green;
+    display: block;
+    padding: 10px 0 5px 16px;
+    margin: 0px 15px 20px 15px;
+}
+
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
 """, unsafe_allow_html=True)
 
 st.markdown(sidebar_bg_css, unsafe_allow_html=True)
