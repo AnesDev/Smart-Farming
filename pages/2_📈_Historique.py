@@ -6,7 +6,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import ast
 from utils import plot_altair
 import mysql.connector
 import datetime
@@ -147,9 +146,10 @@ with col4:
 query = """
 SELECT date, temperature_sol, humidite_sol, temperature_air, humidite_air
 FROM plant_data
-WHERE date BETWEEN ? AND ?
+WHERE date BETWEEN %s AND %s
 ORDER BY date
 """
+
 cur.execute(query, (debut, fin))
 rows = cur.fetchall()
 

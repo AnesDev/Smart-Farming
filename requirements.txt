@@ -3,7 +3,6 @@ pandas
 numpy
 plotly
 altair
-mariadb
-Pillow
+mysql-connector-python
 onnxruntime
 matplotlib
