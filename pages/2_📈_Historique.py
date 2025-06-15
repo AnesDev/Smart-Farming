@@ -8,17 +8,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import ast
 from utils import plot_altair
-import mariadb
+import mysql.connector
 import datetime
 
 
-conn = mariadb.connect(
+conn = mysql.connector.connect(
     user="railway",
-    password="yL-iD82PjIlSjxB4MEvBDiPEC8OSVmvu",  # from Railway
+    password="yL-iD82PjIlSjxB4MEvBDiPEC8OSVmvu",
     host="nozomi.proxy.rlwy.net",
     port=24836,
     database="railway"
 )
+
 
 cur = conn.cursor()
 

@@ -5,16 +5,16 @@ import plotly.graph_objects as go
 import ast
 from models.decoder_latent_onnx_v1 import decode_vector
 from utils import *
-import mariadb
+import mysql.connector
 
-
-conn = mariadb.connect(
+conn = mysql.connector.connect(
     user="railway",
-    password="yL-iD82PjIlSjxB4MEvBDiPEC8OSVmvu",  # from Railway
+    password="yL-iD82PjIlSjxB4MEvBDiPEC8OSVmvu",
     host="nozomi.proxy.rlwy.net",
     port=24836,
     database="railway"
 )
+
 
 cur = conn.cursor()
 
