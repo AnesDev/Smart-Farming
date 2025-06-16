@@ -118,7 +118,7 @@ else:
             "Humidité de l'air (%)"
         ],
         "valeur": valeurs_affichee,
-        "Intervalle optimale": [
+        "Intervalle optimal": [
             "[18, 30]",
             "[40, 70]",
             "[20, 35]",
